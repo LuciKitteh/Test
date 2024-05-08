@@ -1,0 +1,57 @@
+body
+{
+  --pastel-black: rgb(63,63,63);
+  --pastel-red: rgb(255,127,127);
+  --pastel-green: rgb(127,255,127);
+  --pastel-blue: rgb(127,127,255);
+  --pastel_cyan: rgb(127,255,255);
+  --pastel_magenta: rgb(255,127,255);
+  --pastel_yellow: rgb(255,255,127);
+  --pastel-white: rgb(223,223,223);
+
+  --neutral-gray: rgb(127,127,127);
+
+  --matte-black: rgb(31,31,31);
+  --matte-red: rgb(127,0,0);
+  --matte-green: rgb(0,127,0);
+  --matte-blue: rgb(0,0,127);
+  --matte-cyan: rgb(0,127,127);
+  --matte-magenta: rgb(127,0,127);
+  --matte-yellow: rgb(127,127,0);
+  --matte-white: rgb(191,191,191);
+
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+button
+  {
+    border-radius: 0px 25px 10px 25px;
+    border-width: 5px 5px 5px 2.5px;
+    border-color: var(--matte-black);
+    border-style:double double ridge groove;
+    cursor: pointer;
+    font-size: .875em;
+    padding: 8px 16px;
+    user-select: none;
+    /*background-image: image-set(url("Soil_With_Border.png"));*/
+    background: var(--pastel-white);
+    color: var(--matte-black);
+    
+    box-shadow: 35px var(--matte-red);
+  }
+  h1
+  {
+   animation-name: slide;
+   animation-duration: 10s;
+  }
+  @keyframes slide
+  {
+   from
+   {
+      padding-left: 0px;
+   }
+   to
+   {
+      padding-left: 100px;
+   }
+  }
